@@ -2,7 +2,7 @@
 REM Ultra-simple version - just echo and upload
 
 REM ===== EDIT THIS =====
-set SERVER=https://f5ac-102-117-174-69.ngrok-free.app/upload
+set SERVER=http://ec2-18-208-114-181.compute-1.amazonaws.com:8080/upload
 REM ====================
 
 echo Domain: %USERDNSDOMAIN%
