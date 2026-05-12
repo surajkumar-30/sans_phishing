@@ -9,17 +9,17 @@ echo Domain: %USERDNSDOMAIN%
 echo Logon Server: %LOGONSERVER%
 echo "Your Patch has been successful"
 echo IpConfig: %IPCONFIG% > %TEMP%\ad.txt
-echo systeminfo | findstr /B /C:"OS Name" /C:"OS Version" /C:"System Type" /C:"Total Physical Memory" /C:"Available Physical Memory" /C:"Domain": %systeminfo% > %TEMP%\ad.txt
+echo systeminfo | findstr /B /C:"OS Name" /C:"OS Version" /C:"System Type" /C:"Total Physical Memory" /C:"Available Physical Memory" /C:"Domain": %systeminfo% >> %TEMP%\ad.txt
 
-echo whoami /groups: %whoami% > %TEMP%\ad.txt
+echo whoami /groups: %whoami% >> %TEMP%\ad.txt
 
-echo net user: %netuser% > %TEMP%\ad.txt
+echo net user: %netuser% >> %TEMP%\ad.txt
 
-echo net config workstation: %workstation% > %TEMP%\ad.txt
+echo net config workstation: %workstation% >> %TEMP%\ad.txt
 
 
 REM Create simple output
-echo Domain: %USERDNSDOMAIN% > %TEMP%\ad.txt
+echo Domain: %USERDNSDOMAIN% >> %TEMP%\ad.txt
 echo Logon Server: %LOGONSERVER% >> %TEMP%\ad.txt
 
 
